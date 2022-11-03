@@ -1,0 +1,73 @@
+GDP_growth
+Country Name varchar(20) pk fk	
+Country Code varchar() pk fk	
+2001 float pk
+2002 float pk
+2003 float pk
+2004 float pk
+2005 float pk
+2006 float pk
+2007 float pk
+2008 float pk
+2009 float pk
+2010 floatpk
+2011 float pk	
+2012 float pk	
+2013 float pk	
+2014 float pk
+2015 float pk	
+2016 float pk	
+2017 float pk	
+2018 float pk	
+2019 float pk	
+IncomeGroup varchar(40) pk fk
+
+Population
+Country Name varchar(20) pk fk	
+Country Code varchar(20) pk fk	
+001 float pk
+2002 float pk
+2003 float pk
+2004 float pk
+2005 float pk
+2006 float pk
+2007 float pk
+2008 float pk
+2009 float pk
+2010 floatpk
+2011 float pk	
+2012 float pk	
+2013 float pk	
+2014 float pk
+2015 float pk	
+2016 float pk	
+2017 float pk	
+2018 float pk	
+2019 float pk	
+IncomeGroup varchar(40) pk fk
+
+Education
+Country Name varchar(20) pk fk		
+Country Code varchar(20) pk fk		
+001 float pk
+2002 float pk
+2003 float pk
+2004 float pk
+2005 float pk
+2006 float pk
+2007 float pk
+2008 float pk
+2009 float pk
+2010 floatpk
+2011 float pk	
+2012 float pk	
+2013 float pk	
+2014 float pk
+2015 float pk	
+2016 float pk	
+2017 float pk	
+2018 float pk	
+2019 float pk	
+IncomeGroup varchar(40) pk fk	
+University_Count int pk
+Tuition varchar(40) pk fk
