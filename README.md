@@ -61,12 +61,16 @@ After cleaning, the individual data sets are imported in the database as tables 
 The main objectives of the storyboard is to provide a series of data visuals that explore any changes over time, compare the distribution of data across income groups, and to gain a better understanding of the top ten countries for each data set. We also added an interactive map and line chart to enhance the user experience.
 
 To explore the change over time, we used several bar charts to show the global average of each measure from 2001-2019. The example below shows the change over time for the average global inflation rate. Through this analysis we were able to see that certain data sets such as inflation rates, unemployment rates gradually decrease over time. Other metrics such as a country’s health expenditure, export value, and consumption have generally increased over time. The global inflation rate also appears to be the most fluctuant data set over time. These results should be interpreted with caution since the average may heavily be influenced by some extreme outliers.
+![bar_chart](https://user-images.githubusercontent.com/107777321/203223799-31e86b3f-4d1a-4745-a6ff-cab3d39cae1e.png)
 
 We then created several box plots to better understand the spread of data across countries who fall within the high income and low income groups. The boxplot below shows the spread of data for unemployment rates in 2019. This visual shows us that the range of data between the two income groups is fairly similar. The range of data is also similar for the health expenThe higher income group has a wider range of values and several outliers in the consumption, export, and education expenditure data sets. The lower-income group has a wider range of value and several outliers in the inflation rates dataset. 
+![box_plot](https://user-images.githubusercontent.com/107777321/203223857-32e45432-66fc-41b5-a4ce-3418ecb4cc03.png)
 
 Our group identified the top ten and bottom ten countries within each data set in our jupyter notebooks. We decided to use a bubble chart to better understand the scale of differences in each data set. The example below shows a bubble chart of the export values in 2019. We can see that the export value of the United States, China, and Germany is much greater than all the other countries. The countries in the higher income groups generally appear as the largest bubbles in each data set. However, countries within the low-income data set have greater values within the inflation and unemployment rates datasets.
+![bubble_chart](https://user-images.githubusercontent.com/107777321/203223892-849a3cb8-7ecd-40ac-960a-e1308edb02a4.png)
 
 The final component of our storyboard is an interactive heat map and line chart. We used a world map to show the value of each country within their respective datasets. Countries with greater values in the data set have darker colors within the map and those with lighter countries have less value within the data set. The example below shows the population of each country. The labels include the name of the country, their income group, and the given value for 2019. The line chart can be used to show the change of an individual country’s data over time. The filter allows us to choose what countries to include in the line chart and those begin to populate in the key in the worksheet.
+
 
 ## Machine Learning Model
 
@@ -79,13 +83,21 @@ In order to run our model, the data needed to be transformed into a usable data 
 ### Logistic Regression
 Our model was best suited for logistic regression because identifying high income vs low income falls into the category of classification. There were also several variables that could potentially impact the income groups, and it was unknown which variables would impact the model the most
 It was predicted that the random forest algorithm would perform the best because the data set has many features:
+       
        --> Exports
+       
        --> Healthcare Expenditures
+       
        --> Inflation Rate
+       
        --> Population
+       
        --> Education Expenditures
+       
        --> Consumption
+       
        --> GDP Growth
+       
        --> Unemployment
 
 Since the Random Forest Algorithm structure learns by generating many simple decision trees using randomly selected data, it was expected that the model would be able to identify more specific trends for each feature, and perform better in predicting the overall income group. To compare slightly different algorithms, Both the Random forest and Balanced random forest models were investigated in an effort to select the better testing model. 
@@ -93,6 +105,7 @@ Since the Random Forest Algorithm structure learns by generating many simple dec
 It was noted, the subject might be subject to some mild class imbalance; the low income group accounts for 38% of the data while the high income group accounts for 62% of the data. As an additional step, the oversampling, undersampling, and a combination of over and under sampling models were applied to investigate whether the class imbalance models were appropriate for this data set.
 
 ### Results
+
 Random Forest Algorithm Summary Metrics
     Balanced Accuracy Score: 0.83
     Precision Score: 0.86
@@ -135,3 +148,4 @@ Overall, GDP provides insight into understanding the economic trends across coun
 ## Presentation
 
 ## Link to Tableau Storyboard
+https://public.tableau.com/app/profile/brandon.cruz7008/viz/Global_GDP_Trends/Global_GDP_Analysis?publish=yes
