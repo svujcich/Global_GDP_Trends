@@ -41,10 +41,12 @@ Jupyter Notebook, Visual Studio Code (VS Code), Python, Postgres, MatPlotLib, PG
 9. population.csv, 
 10. country-codes.csv, 
 11. countries_region_income.csv
-from worldbank.org
+
+from [worldbank.org](https://www.worldbank.org/en/home)
 
 ### Web Scraping
 webscraped_university_names.csv collected from https://www.4icu.org/reviews/
+
 Information not a focus of the final project 
 
 ### Group Communication Protocols
@@ -57,6 +59,7 @@ The data sets are imported into the jupyter notebook, where the data is cleaned 
 
 ### Database
 After cleaning, the individual data sets are imported in the database as tables then a query was used to merge the data sets with country name, country code, income group, 2019 year values from individual data sets together to use this data in training the Machine Learning Model.
+![ERD](https://user-images.githubusercontent.com/107777321/203226373-65debb75-d17f-40e0-9aa5-cdc171362d82.png)
 
 ### Tableau Storyboard
 The main objectives of the storyboard is to provide a series of data visuals that explore any changes over time, compare the distribution of data across income groups, and to gain a better understanding of the top ten countries for each data set. We also added an interactive map and line chart to enhance the user experience.
@@ -109,32 +112,12 @@ Since the Random Forest Algorithm structure learns by generating many simple dec
 It was noted, the subject might be subject to some mild class imbalance; the low income group accounts for 38% of the data while the high income group accounts for 62% of the data. As an additional step, the oversampling, undersampling, and a combination of over and under sampling models were applied to investigate whether the class imbalance models were appropriate for this data set.
 
 ### Results
+#### Summary of Machine Learning Algorithms
+<img width="625" alt="summary_df" src="https://user-images.githubusercontent.com/107777321/203225456-6e36c60e-16f2-45d6-954d-174af028b1d5.png">
 
-Random Forest Algorithm Summary Metrics
-    Balanced Accuracy Score: 0.83
-    Precision Score: 0.86
-    Sensitivity Score: 0.90
+#### Random Forest Confusion Matrix
+<img width="725" alt="random_forest_confusion_matrix" src="https://user-images.githubusercontent.com/107777321/203226910-a16cf5f7-a2ef-4570-8692-9fd26da6f576.png">
 
-Balanced Random Forest Algorithm Summary Metrics
-    Balanced Accuracy Score: 0.80
-    Precision Score: 0.85
-    Sensitivity Score: 0.85 
-
-Oversampling
-    Balanced Accuracy Score: 0.50
-    Precision Score: 0.63
-    Sensitivity Score: 1.00
-
-Undersampling
-    Balanced Accuracy Score: 0.74
-    Precision Score: 0.86
-    Sensitivity Score 0.65
-
-Combination Over and under Sampling sampling
-    Balanced Accuracy Score: 0.50
-    Precision Score: 0.63
-    Sensitivity Score: 1.00
-   
 ### Conclusion
 On a high level, both the random forest algorithm and balanced random forest algorithm performed well. Although the undersampling method was effective at identifying precision, in general, the techniques for addressing class imbalance, (oversampling, undersampling, and a combination of over and under sampling) did not perform as well; the sensitivity for the oversampling and SMOTEENN models were suspiciously high, and the level of accuracy was unimpressive. From these results, we were able to validate that the random forest models were better suited for our data set.
 
@@ -150,6 +133,7 @@ The table shows that the feature that plays the greatest role in determining cal
 Overall, GDP provides insight into understanding the economic trends across countries. By visualizing the trends in data and identifying the features that affect the income groups the most, it is possible to focus the analysis on features of the data set that have the greatest impact on GDP. This allows for closer inspection of trends to identify similarities between countries with high income groups, similarities between countries with low income groups, and differences between high income group countries and low income group countries.
 
 ## Presentation
+https://docs.google.com/presentation/d/1rfQVL5iwqM5cLL4AgLpp5g_AMYNXSfHGmhOIZYnLxT0/edit#slide=id.g19e5c47af66_0_0
 
 ## Link to Tableau Storyboard
 https://public.tableau.com/app/profile/brandon.cruz7008/viz/Global_GDP_Trends/Global_GDP_Analysis?publish=yes
