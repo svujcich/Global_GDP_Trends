@@ -129,6 +129,9 @@ All things considered, the random forest algorithm performed the best for predic
 
 The table shows that the feature that plays the greatest role in determining calculating income groups is the exports value, followed by healthcare expenditures, and the inflation rate. The table also shows the least important feature is unemployment.
 
+<img width="400" alt="feature_importance" src="https://user-images.githubusercontent.com/106559768/203228334-fd84ea5b-d785-46c1-872e-81d3e32c5090.png">
+
+
 ### Final Thoughts
 Overall, GDP provides insight into understanding the economic trends across countries. By visualizing the trends in data and identifying the features that affect the income groups the most, it is possible to focus the analysis on features of the data set that have the greatest impact on GDP. This allows for closer inspection of trends to identify similarities between countries with high income groups, similarities between countries with low income groups, and differences between high income group countries and low income group countries.
 
