@@ -13,7 +13,8 @@ Economic growth is an increase in the production of goods and services, compared
 GDP stands for “Gross Domestic Product” and represents the total monetary value of all final goods and services produced within a country during a period of time. GDP is the most commonly used measure of economic activity.
 	
   The components of GDP includes Consumption (C), Investment (I), govt. Spending (G), exports (X), Imports (M)
-			GDP = C + I + G + (X - M)
+			
+						GDP = C + I + G + (X - M)
 
 GDP Growth rate is the percentage increase in the GDP from year to year. If the growth rate is negative, indicates economic contraction and a sign of recession. If the growth rate is too high, it creates inflation.
 
@@ -61,12 +62,15 @@ After cleaning, the individual data sets are imported in the database as tables 
 The main objectives of the storyboard is to provide a series of data visuals that explore any changes over time, compare the distribution of data across income groups, and to gain a better understanding of the top ten countries for each data set. We also added an interactive map and line chart to enhance the user experience.
 
 To explore the change over time, we used several bar charts to show the global average of each measure from 2001-2019. The example below shows the change over time for the average global inflation rate. Through this analysis we were able to see that certain data sets such as inflation rates, unemployment rates gradually decrease over time. Other metrics such as a country’s health expenditure, export value, and consumption have generally increased over time. The global inflation rate also appears to be the most fluctuant data set over time. These results should be interpreted with caution since the average may heavily be influenced by some extreme outliers.
+
 ![bar_chart](https://user-images.githubusercontent.com/107777321/203223799-31e86b3f-4d1a-4745-a6ff-cab3d39cae1e.png)
 
 We then created several box plots to better understand the spread of data across countries who fall within the high income and low income groups. The boxplot below shows the spread of data for unemployment rates in 2019. This visual shows us that the range of data between the two income groups is fairly similar. The range of data is also similar for the health expenThe higher income group has a wider range of values and several outliers in the consumption, export, and education expenditure data sets. The lower-income group has a wider range of value and several outliers in the inflation rates dataset. 
+
 ![box_plot](https://user-images.githubusercontent.com/107777321/203223857-32e45432-66fc-41b5-a4ce-3418ecb4cc03.png)
 
 Our group identified the top ten and bottom ten countries within each data set in our jupyter notebooks. We decided to use a bubble chart to better understand the scale of differences in each data set. The example below shows a bubble chart of the export values in 2019. We can see that the export value of the United States, China, and Germany is much greater than all the other countries. The countries in the higher income groups generally appear as the largest bubbles in each data set. However, countries within the low-income data set have greater values within the inflation and unemployment rates datasets.
+
 ![bubble_chart](https://user-images.githubusercontent.com/107777321/203223892-849a3cb8-7ecd-40ac-960a-e1308edb02a4.png)
 
 The final component of our storyboard is an interactive heat map and line chart. We used a world map to show the value of each country within their respective datasets. Countries with greater values in the data set have darker colors within the map and those with lighter countries have less value within the data set. The example below shows the population of each country. The labels include the name of the country, their income group, and the given value for 2019. The line chart can be used to show the change of an individual country’s data over time. The filter allows us to choose what countries to include in the line chart and those begin to populate in the key in the worksheet.
