@@ -1,0 +1,36 @@
+-- Select country_codes.country_name,
+-- 	country_codes.country_code,
+-- 	health_exp.h_2019,
+-- 	education.edu_2019,
+-- -- 	military_exp.mil_2019,
+-- 	exports.e_2019,
+-- 	consumption.con_2019,
+-- 	inflation_rates.inf_2019,
+-- 	unemployment_rate.une_2019,
+-- 	population.p_2019,
+-- 	gdp_growth.g_2019,
+-- 	gdp_growth.income_group	
+-- INTO world_2019_data_2
+-- from country_codes
+-- INNER JOIN health_exp
+-- ON country_codes.country_code = health_exp.country_code
+-- INNER JOIN education
+-- ON country_codes.country_code = education.country_code
+-- -- INNER JOIN military_exp
+-- -- ON country_codes.country_code = military_exp.country_code
+-- INNER JOIN exports
+-- ON country_codes.country_code = exports.country_code
+-- INNER JOIN consumption
+-- ON country_codes.country_code = consumption.country_code
+-- INNER JOIN inflation_rates
+-- ON country_codes.country_code = inflation_rates.country_code
+-- INNER JOIN unemployment_rate
+-- ON country_codes.country_code = unemployment_rate.country_code
+-- INNER JOIN population
+-- ON country_codes.country_code = population.country_code
+-- INNER JOIN gdp_growth
+-- ON country_codes.country_code = gdp_growth.country_code;
+
+SELECT COUNT(country_name) 
+FROM world_2019_data_2;
+-- group by income_group
